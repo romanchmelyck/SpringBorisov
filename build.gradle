@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'gs-spring-borisov-1'
+    version = '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+   // https://mvnrepository.com/artifact/org.springframework/spring-core
+compile group: 'org.springframework', name: 'spring-core', version: '4.3.5.RELEASE'
+
+// https://mvnrepository.com/artifact/org.springframework/spring-context
+compile group: 'org.springframework', name: 'spring-context', version: '4.3.5.RELEASE'
+
+// https://mvnrepository.com/artifact/org.springframework/spring-beans
+compile group: 'org.springframework', name: 'spring-beans', version: '4.3.5.RELEASE'
+
+
+// https://mvnrepository.com/artifact/commons-logging/commons-logging
+compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
+
+
+
+}
