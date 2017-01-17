@@ -8,8 +8,13 @@ public class PrjConfig {
 
 	
 	@Bean
-	public InjectRandomIntAnnotationBeanPostProcessor processor(){
+	public InjectRandomIntAnnotationBeanPostProcessor processor() {
 		return new InjectRandomIntAnnotationBeanPostProcessor();
+	}
+	
+	@Bean
+	public ProfilingAnnotationBeanPostProcessor profilingProcessor() throws Exception {
+		return new ProfilingAnnotationBeanPostProcessor();
 	}
 
 	@Bean
