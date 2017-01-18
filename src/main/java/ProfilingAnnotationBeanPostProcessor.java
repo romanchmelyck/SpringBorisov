@@ -27,7 +27,6 @@ public class ProfilingAnnotationBeanPostProcessor implements BeanPostProcessor {
 		if (beanClass.isAnnotationPresent(Profiling.class)) {
 			map.put(beanName, beanClass);
 		}
-		
 		return bean;
 	}
 

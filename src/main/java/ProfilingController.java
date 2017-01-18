@@ -1,7 +1,7 @@
 
 public class ProfilingController implements ProfilingControllerMBean {
 
-	public boolean profilingEnabled;
+	public boolean profilingEnabled = true;
 
 	public boolean isProfilingEnabled() {
 		return profilingEnabled;

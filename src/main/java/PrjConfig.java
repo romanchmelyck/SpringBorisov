@@ -6,7 +6,11 @@ import org.springframework.context.annotation.Import;
 @Configuration
 public class PrjConfig {
 
-	
+	@Bean
+	public PostProxyInvokerContextListener postProxyListener() {
+		return new PostProxyInvokerContextListener();
+	}
+
 	@Bean
 	public InjectRandomIntAnnotationBeanPostProcessor processor() {
 		return new InjectRandomIntAnnotationBeanPostProcessor();

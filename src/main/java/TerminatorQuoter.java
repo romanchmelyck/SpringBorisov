@@ -23,8 +23,10 @@ public class TerminatorQuoter implements Quoter{
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	
+
+
 	@Override
+	@PostProxy
 	public void sayQuote() {
 		for (int i = 0; i < repeat; i++) {
 			System.out.println("Message is: " + message);
