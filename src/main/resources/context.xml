@@ -7,8 +7,10 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+ <context:annotation-config/>
 	<bean class="InjectRandomIntAnnotationBeanPostProcessor"/>
-
+    <bean class="PostProxyInvokerContextListener"/>
+    <bean class="ProfilingAnnotationBeanPostProcessor"/>
 	<bean class="TerminatorQuoter" id="terminatorQuoter">
 		<property name="message" value="I'll be back"/>
 	</bean>

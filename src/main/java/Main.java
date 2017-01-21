@@ -5,11 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(PrjConfig.class);
-//		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("context.xml");
+//		ApplicationContext ctx = new AnnotationConfigApplicationContext(PrjConfig.class);
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("context.xml");
 		
 		Quoter terminator = ctx.getBean(Quoter.class);
-//		terminator.sayQuote();
+		terminator.sayQuote();
 		
 //		while(true) {
 //			Thread.sleep(100);
