@@ -8,9 +8,8 @@ public class Main {
 //		ApplicationContext ctx = new AnnotationConfigApplicationContext(PrjConfig.class);
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("context.xml");
 		
-		Quoter terminator = ctx.getBean(Quoter.class);
-		terminator.sayQuote();
-		
+		ctx.getBean(Quoter.class).sayQuote();
+
 //		while(true) {
 //			Thread.sleep(100);
 //			ctx.getBean(Quoter.class).sayQuote();

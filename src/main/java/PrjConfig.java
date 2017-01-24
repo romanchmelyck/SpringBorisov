@@ -22,6 +22,11 @@ public class PrjConfig {
 	}
 
 	@Bean
+	public DeprecationHandlerBeanFactoryPostProcessor deprecatedBeanFactoryPostprocessor() {
+		return new DeprecationHandlerBeanFactoryPostProcessor();
+	}
+
+	@Bean
 	public Quoter terminator() {
 		TerminatorQuoter quoter = new TerminatorQuoter();
 		quoter.setMessage("I'll be back");
