@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Import;
 @Configuration
 public class PrjConfig {
 
-	@Bean
-	public PostProxyInvokerContextListener postProxyListener() {
-		return new PostProxyInvokerContextListener();
-	}
+//	@Bean
+//	public PostProxyInvokerContextListener postProxyListener() {
+//		return new PostProxyInvokerContextListener();
+//	}
 
 	@Bean
 	public InjectRandomIntAnnotationBeanPostProcessor processor() {
@@ -22,7 +22,7 @@ public class PrjConfig {
 	}
 
 	@Bean
-	public DeprecationHandlerBeanFactoryPostProcessor deprecatedBeanFactoryPostprocessor() {
+	public static DeprecationHandlerBeanFactoryPostProcessor deprecatedBeanFactoryPostprocessor() {
 		return new DeprecationHandlerBeanFactoryPostProcessor();
 	}
 

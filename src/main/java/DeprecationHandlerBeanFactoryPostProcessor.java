@@ -17,7 +17,7 @@ public class DeprecationHandlerBeanFactoryPostProcessor  implements BeanFactoryP
                 final Class<?> beanClass= Class.forName(beanClassName);
                 DeprecatedClass annotation = beanClass.getAnnotation(DeprecatedClass.class);
                 if (annotation != null) {
-                    beanDefinition.setBeanClassName(annotation.newImpl().getName());
+                     beanDefinition.setBeanClassName(annotation.newImpl().getName());
                 }
             } catch (Exception e) {
                 e.printStackTrace();
