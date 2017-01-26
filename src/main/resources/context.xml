@@ -11,6 +11,7 @@
 	<bean class="InjectRandomIntAnnotationBeanPostProcessor"/>
     <bean class="PostProxyInvokerContextListener"/>
     <bean class="ProfilingAnnotationBeanPostProcessor"/>
+    <bean class="DeprecationHandlerBeanFactoryPostProcessor"/>
 	<bean class="TerminatorQuoter" id="terminatorQuoter">
 		<property name="message" value="I'll be back"/>
 	</bean>
