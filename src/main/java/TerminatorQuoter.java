@@ -1,6 +1,6 @@
 import javax.annotation.PostConstruct;
 
-//@Profiling
+@Profiling
 @DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter{
 
